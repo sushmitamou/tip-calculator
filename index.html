@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip-calculatorf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" onchange="calcy();">
+        <h1>Tip Calculator</h1>
+        <hr>
+        <div>
+            <label for="">Total Bill : </label>
+            <input type="text" id="bill-total" placeholder="enter your total bill...">
+        </div>
+        <div>
+            <label for="">Tip : </label>
+            <input type="range" id="tipInput" value = "0" placeholder="enter your total bill...">
+            <span id="tipOutput"></span>
+        </div>
+        <div>
+            <label>Split(number of people)</label>
+            <input type="range" min="1" max="10" value="1" id="splitInput">
+            <span id="splitOutput"></span>
+        </div>
+        <hr>
+
+        <div>
+            <div>
+                <label class="emne">New Bill(per person) :</label><span id="newBill">0</span>
+            </div>
+            <div>
+                <label>Tip Amount(per person) :</label><span id="newTip">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
